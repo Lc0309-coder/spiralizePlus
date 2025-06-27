@@ -1,2 +1,2 @@
 # spiralizePlus
-x
+x y z
