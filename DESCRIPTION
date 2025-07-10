@@ -2,8 +2,11 @@ Package: spiralizePlus
 Title: What the Package Does (One Line, Title Case)
 Version: 0.0.0.9000
 Authors@R: 
-    person("First", "Last", , "first.last@example.com", role = c("aut", "cre"),
-           comment = c(ORCID = "YOUR-ORCID-ID"))
+    c(
+    person("Tianze", "Cao", , "hnrcao@qq.com", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0003-4308-1878")),
+    person("Chen", "Liu", , "3169672818@qq.com", role = c("aut"))
+    )
 Description: What the package does (one paragraph).
 License: MIT + file LICENSE
 Encoding: UTF-8
