@@ -1,5 +1,5 @@
 Package: spiralizePlus
-Title: What the Package Does (One Line, Title Case)
+Title: ​Object-Oriented and Additive Operator-Based Spiralization
 Version: 0.0.0.9000
 Authors@R: 
     c(
@@ -7,8 +7,20 @@ Authors@R:
            comment = c(ORCID = "0000-0003-4308-1878")),
     person("Chen", "Liu", , "3169672818@qq.com", role = c("aut"))
     )
-Description: What the package does (one paragraph).
+Description: spiralizePlus provides an object-oriented interface extension for the 'spiralize' package. It implements a modular architecture where spiral visualization components (axes, tracks, layers, etc.) are encapsulated as R4 objects with class-specific methods. Users construct complex spiral plots by combining these components through additive operators (+) in a declarative syntax.
 License: MIT + file LICENSE
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.3.2
+Depends: 
+    spiralize (>= 1.1.0),
+    R (>= 4.4.0)
+Imports:
+    methods
+URL: https://github.com/TianzeLab/spiralizePlus, https://tianzelab.github.io/spiralizePlus
+Collate: 
+    'track-geom.R'
+    'track.R'
+    'initialize.R'
+    'add.R'
+    'sprializePlus-package.R'
