@@ -17,7 +17,7 @@ Depends:
     R (>= 4.4.0)
 Imports:
     methods
-URL: https://github.com/TianzeLab/spiralizePlus, https://tianzelab.github.io/spiralizePlus
+URL: https://github.com/caotianze/spiralizePlus, https://caotianze.github.io/spiralizePlus
 Collate: 
     'track-geom.R'
     'track.R'
