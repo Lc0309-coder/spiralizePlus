@@ -1,0 +1,8 @@
+pandoc: 3.1.11
+pkgdown: 2.1.3
+pkgdown_sha: ~
+articles: {}
+last_built: 2025-08-19T08:13Z
+urls:
+  reference: https://caotianze.github.io/spiralizePlus/reference
+  article: https://caotianze.github.io/spiralizePlus/articles
