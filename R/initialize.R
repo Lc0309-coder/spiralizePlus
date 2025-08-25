@@ -18,3 +18,36 @@ setClass(
     clear = "logical"
   )
 )
+
+spPlot=function(initMode = 'initialize',
+                clear=TRUE,
+                ...){
+  new(
+    "spPlot",
+    initMode = initMode,
+    initParams = list(...),
+    tracks = list(),
+    clear = clear
+  )
+}
+setMethod('show',signature = 'spPlot',definition = function(object){
+  if (object@clear)
+    spiral_clear()
+
+  if (object@initMode == 'initialize'){
+    do.call(spiral_initialize, object@initParams)
+  }else if (object@initMode == 'initialize_by_gcoor'){
+    do.call(spiral_initialize_by_gcoor, object@initParams)
+  }else if (object@initMode == 'initialize_by_time'){
+    do.call(spiral_initialize_by_time, object@initParams)
+  }
+
+  for (current_track in object@tracks){
+    do.call(current_track@func, current_track@params)
+    for (current_geom in current_track@trackGeoms){
+      do.call(current_geom@func,current_geom@params)
+    }
+  }
+
+  return(invisible(NULL))
+})

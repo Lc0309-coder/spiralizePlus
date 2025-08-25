@@ -11,3 +11,25 @@
 setClass("spTrack",
   slots = c(func = "character", params = "list", trackGeoms = "list")
 )
+
+spTrack = function(ylim = c(0,1),
+                 height = 0.8,
+                 background = TRUE,
+                 background_gp = gpar(fill = "#EEEEEE"),
+                 reverse_y = FALSE,
+                 gradient = FALSE)
+  {name_args = list(
+    ylim = ylim,
+    height = height,
+    background = background,
+    background_gp = background_gp,
+    reverse_y = reverse_y,
+    gradient = gradient
+  )
+  new(
+    "spTrack",
+    func = "spiral_track",
+    params = c(name_args),
+    trackGeoms = list()
+  )
+}
