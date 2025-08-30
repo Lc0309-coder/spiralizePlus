@@ -12,6 +12,20 @@ setClass("spTrack",
   slots = c(func = "character", params = "list", trackGeoms = "list")
 )
 
+
+#' Define a generic track
+#'
+#' Object [spTrack-class] will call the function [spiralize::spiral_track] while drawing.
+#'
+#' @inheritParams spiralize::spiral_track
+#'
+#' @returns Object [spTrack-class]
+#' @importFrom grid gpar
+#' @importFrom methods new
+#' @export
+#'
+#' @examples
+#' NULL
 spTrack = function(ylim = c(0,1),
                  height = 0.8,
                  background = TRUE,

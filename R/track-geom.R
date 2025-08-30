@@ -11,6 +11,19 @@
 #' NULL
 setClass("spTrackGeom", slots = c(func = "character", params = "list"))
 
+#' Add points on all sections of a single track.
+#'
+#' Object [spTrackGeom-class] will call the function [spiralize::spiral_points] while drawing.
+#'
+#' @inheritParams spiralize::spiral_points
+#'
+#' @returns Object [spTrackGeom-class]
+#' @importFrom grid gpar
+#' @importFrom methods new
+#' @export
+#'
+#' @examples
+#' NULL
 spPoints <- function(x = NULL,
                      y = NULL,
                      pch = 1,
