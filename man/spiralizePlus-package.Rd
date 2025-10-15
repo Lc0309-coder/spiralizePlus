@@ -6,13 +6,13 @@
 \alias{spiralizePlus-package}
 \title{spiralizePlus: ​Object-Oriented and Additive Operator-Based Spiralization}
 \description{
-spiralizePlus provides an object-oriented interface extension for the 'spiralize' package. It implements a modular architecture where spiral visualization components (axes, tracks, layers, etc.) are encapsulated as R4 objects with class-specific methods. Users construct complex spiral plots by combining these components through additive operators (+) in a declarative syntax.
+spiralizePlus provides an object-oriented interface extension for the 'spiralize' package. It implements a modular architecture where spiral visualization components (axes, tracks, layers, etc.) are encapsulated as R S4 objects with class-specific methods. Users construct complex spiral plots by combining these components through additive operators (+) in a declarative syntax.
 }
 \seealso{
 Useful links:
 \itemize{
-  \item \url{https://github.com/TianzeLab/spiralizePlus}
-  \item \url{https://tianzelab.github.io/spiralizePlus}
+  \item \url{https://github.com/caotianze/spiralizePlus}
+  \item \url{https://caotianze.github.io/spiralizePlus}
 }
 
 }
