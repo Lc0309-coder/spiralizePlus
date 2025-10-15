@@ -11,6 +11,7 @@
 #' NULL
 setClass("spTrackGeom", slots = c(func = "character", params = "list"))
 
+
 #' Add points on all sections of a single track.
 #'
 #' Object [spTrackGeom-class] will call the function [spiralize::spiral_points] while drawing.
@@ -26,8 +27,10 @@ setClass("spTrackGeom", slots = c(func = "character", params = "list"))
 #' library(spiralize)
 #' library(spiralizePlus)
 #' p<-spPlot()
+#' q<-spTrack()
+#' pq<p+q
 #' g<-spPoints(x = runif(1000),y = runif(1000))
-#' plot(p+g)
+#' plot(pq+g)
 spPoints <- function(x = NULL,
                      y = NULL,
                      pch = 1,
