@@ -23,7 +23,11 @@ setClass("spTrackGeom", slots = c(func = "character", params = "list"))
 #' @export
 #'
 #' @examples
-#' NULL
+#' library(spiralize)
+#' library(spiralizePlus)
+#' p<-spPlot()
+#' g<-spPoints(x = runif(1000),y = runif(1000))
+#' plot(p+g)
 spPoints <- function(x = NULL,
                      y = NULL,
                      pch = 1,
